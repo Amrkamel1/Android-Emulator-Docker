@@ -6,6 +6,8 @@ services:
     build: .
     ports:
       - 4725:4725                                                              ## Android/Appium Service
+      - 5554:5554
+      - 5555:5555
     container_name: Android-Service
     environment:
       APPIUM_PORT: 4725
